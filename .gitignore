@@ -1,4 +1,4 @@
 # config files
-config/allowed-chat-ids
-config/allowed-user-ids
-config/telegram-token
+**/config/allowed-chat-ids
+**/config/allowed-user-ids
+**/config/telegram-token

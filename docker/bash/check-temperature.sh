@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # This script will control the processor temperature
 # Requirements:
 #   required packages: lm_sensors
@@ -11,7 +11,7 @@ CPU_TEMPERATURE_INT=$(echo $CPU_TEMPERATURE | tr -d .°C)
 if [ $CPU_TEMPERATURE_INT -gt 100 ]; then
 	MESSAGE="Raspberry CPU temperature is too high: ${CPU_TEMPERATURE}"
 	# Send telegram message though sendMessage
-	./commands/sendMessage.sh "$MESSAGE"
+	/var/tmp/scripts/commands/sendMessage.sh "$MESSAGE"
 fi
 
 exit 0
