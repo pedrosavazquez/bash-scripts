@@ -59,8 +59,8 @@ fi
 # Merge chat ids and user ids into recipients array
 RECIPIENTS=$(echo "$CHAT_IDS $USER_IDS" | tr ' ' '\n')
 
+text=$(urlencode "$1")
 for id in $RECIPIENTS; do
-    text=$(urlencode "$1")
     curl "https://api.telegram.org/bot$TELEGRAM_TOKEN/sendMessage?chat_id=$id&text=$text"
 done
 
