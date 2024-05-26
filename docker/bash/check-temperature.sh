@@ -1,7 +1,7 @@
 #!/bin/sh
 # This script will control the processor temperature
 # Requirements:
-#   required packages: lm_sensors
+#   required packages: lm_sensors curl
 
 VERSION="0.0.1\nScript to send with telegram CPU temperature"
 

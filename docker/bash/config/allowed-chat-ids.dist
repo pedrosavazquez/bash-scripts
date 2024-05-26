@@ -1,4 +1,5 @@
-write your allowed chat ids here
+Copy this file without the .dist extension.
+write your allowed chat ids here removing anything else
 example:
 1122334455
 5544332211

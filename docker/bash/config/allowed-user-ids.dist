@@ -1,4 +1,5 @@
-write your allowed users id here
+Copy this file without the .dist extension
+write your allowed users id here removing anything else
 example:
 1122334455
 5544332211
